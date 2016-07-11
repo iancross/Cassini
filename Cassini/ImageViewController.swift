@@ -33,6 +33,8 @@ class ImageViewController: UIViewController
     
     private var imageView = UIImageView()
     
+    
+    //model 
     private var image: UIImage? {
         get {
             return imageView.image
@@ -48,5 +50,5 @@ class ImageViewController: UIViewController
         super.viewDidLoad()
         scrollView.addSubview(imageView)
         imageURL = NSURL(string: DemoURL.Stanford)
-    } 
+    }
 }
